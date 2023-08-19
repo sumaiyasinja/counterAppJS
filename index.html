@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DaisyUI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Poppins Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">    
+    <title>Counter App</title>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="mb-6 bg-blue-950 text-center text-white p-4">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center uppercase font-black">
+        Welcome to my awesome count app 🧐
+    </h1>
+</header>
+
+<main class="mt-8">
+    <section class="flex flex-1">
+        <div class="mockup-phone border-primary shadow-xl">
+            <div class="camera"></div> 
+            <div class="display">
+              <div class="artboard artboard-demo phone-1 text-5xl">
+                <div>
+                    <p class=" text-black text-2xl pb-8 text-center font-bold">
+                        Start Counting:
+                    </p>
+                </div>
+                <!-- counter -->
+                <div>
+                    <p  class="font-extrabold p-4 text-gray-500" ><span class="text-7xl text-blue-950 text-center " id="counter">0</span><sub>+</sub></p>
+                </div>
+                <!-- buttons -->
+                <div class="text-center ">
+                    <button id="plus_button" class="btn btn-accent text-xl w-12 h-10 rounded-full hover:text-white">+</button>
+                    
+                    <button id="minus_button" class="btn btn-accent text-xl w-12 h-10 rounded-full hover:text-white">-</button>
+                </div>
+                <div class="text-center ">
+                    <input type="reset" value="Reset" class="btn btn-active bg-blue-950 text-white px-10 hover:text-blue-950 hover:bg-gray-300" onclick="counterReset()" />
+                    
+                </div>
+
+            </div>
+            </div>
+          </div>
+    </section>
+  
+</main>
+<footer class="mt-6  bg-blue-950  text-center text-white p-2">
+    <span>Sumaiya Sinja &copy . All Rights Reserved.</span>
+</footer>
+<script src="counter.js"></script>
+</body>
+</html>
